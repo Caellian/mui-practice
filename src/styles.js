@@ -18,16 +18,13 @@ export const GlobalStyles = {
     backgroundColor: (theme) => theme.palette.background.paper,
     padding: (theme) => theme.spacing(8, 0, 6),
   },
-  icon: {
-    marginRight: (theme) => theme.spacing(2),
-  },
-  buttons: {
-    marginTop: (theme) => theme.spacing(4),
+  colorText: {
+    color: (theme) => theme.palette.text.primary,
   },
   cardGrid: {
     padding: (theme) => theme.spacing(4, 0),
   },
   cardMedia: {
     aspectRatio: "16 / 9",
-  }
+  },
 };

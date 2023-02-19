@@ -10,6 +10,22 @@ As I was following the tutorial I tried using [MUI Theming](https://mui.com/mate
 
 After finishing the tutorial, I compared my sources to the MUIv5 [Album template](https://github.com/mui/material-ui/blob/v5.11.9/docs/data/material/getting-started/templates/album/Album.js) and noticed several differences which indicate that there are newer/better ways of achieving the same results.
 
+## New things
+
+- Spacing property aliases
+  - `margin-right` is aliased by `mr`
+- Spacing numbers mapped to `theme.spacing`
+- Using [Stack](https://mui.com/material-ui/react-stack/) instead of Grid.
+  - Stack relies on CSS Flexbox, while Grid used CSS Grid for layouting. So it's a more appropriate choice for laying out buttons.
+- [Box](https://mui.com/material-ui/react-box/) is used instead of `div`s
+- Interpolated colors (from `theme.palette`)
+  - `color="text.primary"` instead of `color="textPrimary"`
+  - doesn't work on icons
+- How `xs={12}`, `sm={6}` and `md={4}` affect layout for different views
+  - This isn't new, I forgot how MUI layouts handle screen breakpoints.
+- `component` property
+  - Can be used to override component types which in turn allows using `sx` on `footer` tags.
+
 ## Conclusions
 
 Using outdated tutorials is bad for learning how libraries work. They can be good for grasping new concepts, but make the learning process harder than it needs to be.
